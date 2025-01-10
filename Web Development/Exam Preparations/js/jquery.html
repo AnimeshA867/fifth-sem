@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 
+    JQuery is a fast, small and feature rich javascript library. It was designed to handle browser incompatibilities and to simplity HTML DOM manipulation, event handling, AJAX and animations. There are several ways to use jQuery but the simplest one is to use the CDN.
+    jQuery Syntax:
+        $(selector).actions(function);
+
+    Jquery selectors:
+    jquery selectors allow us to select and manipulate html elements. jQuery selectors are used to find or select HTML element based on their element,name, class, id, attributes and more. All selectors in jquery start with dollar sign and the paranthesis
+    1) Element
+    2) Class    
+    3) Id
+    
+    Jquery events;
+    1) Mouse:
+        hover, mouseenter, mouseleave,dbclick
+    2) Keyboard:
+        keydown, keyup, keypress
+    3) Form events;
+        submit, change, focus, blur
+    4) Document/Windows events
+        load, resize, scroll, unload
+
+    jquery effects:
+    1) hide()
+    2) fadeIn()
+    3) faceOut()
+    4) slideUp()
+    5) slideDown
+    6) animate
+    7) stop
+    8) chaining
+    -->
+
+    <div
+      id="div"
+      style="height: 300px; width: 500px; background-color: aquamarine"
+    >
+      Hey there.
+    </div>
+
+    <button>Click Me</button>
+    <script>
+      $(document).ready(function () {
+        // $("button").click(() => {
+        //   $("div").fadeIn();
+        // });
+        // $("div").mouseenter(function () {
+        //   $(this).css({ "background-color": "red" });
+        // });
+        // $("button").dblclick(function () {
+        //   $("div").fadeOut(3000);
+        // });
+        // $("div").hide();
+        $(document).keydown(() => {
+          $("div").slideUp(3000);
+        });
+        $("img").on("load", function () {
+          alert("The image has been loaded.");
+        });
+      });
+    </script>
+  </body>
+</html>

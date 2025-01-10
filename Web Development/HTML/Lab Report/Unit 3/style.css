@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* CSS3 Borders */
+.border-example {
+  border: 5px solid #4caf50; /* Solid green border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Space inside the border */
+  width: 300px; /* Fixed width */
+  margin-bottom: 20px; /* Space below the element */
+}
+
+/* CSS3 Box Shadow */
+.box-shadow-example {
+  width: 300px; /* Fixed width */
+  padding: 20px; /* Space inside the box */
+  margin-bottom: 20px; /* Space below the element */
+  border: 1px solid #ccc; /* Light gray border */
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+/* CSS3 Text Effects */
+.text-effects-example {
+  font-size: 24px; /* Larger text size */
+  font-family: "Arial", sans-serif; /* Font family */
+  color: #ff5722; /* Text color */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* CSS3 Text Shadow */
+.text-shadow-example {
+  font-size: 24px; /* Larger text size */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow */
+  text-align: center; /* Centered text */
+}

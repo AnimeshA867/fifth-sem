@@ -1,0 +1,8 @@
+Algorithm for sequential search:
+1) Start
+2) Read the element from the user.
+3) Compare the element with the first element of the array
+4) If both the element matches, return "The element has been found" and stop
+5) If the elements didn't match, move to the next index of the array and compare.
+6) Repeat step 4 and 5 until the last index of the array or until the element is found.
+7) If the element doesn't match and the index is out of bound, return "The element was not found" and stop

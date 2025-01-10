@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Information</title>
+    <script>
+      function loadXMLDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            displayData(this);
+          }
+        };
+        xhttp.open("GET", "class.xml", true);
+        xhttp.send();
+      }
+
+      function displayData(xml) {
+        const xmlDoc = xml.responseXML;
+        const table =
+          "<tr><th>Name</th><th>ID</th><th>Branch</th><th>CGPA</th></tr>";
+        const students = xmlDoc.getElementsByTagName("student");
+        let tableRows = table;
+        for (let i = 0; i < students.length; i++) {
+          tableRows +=
+            "<tr><td>" +
+            students[i].getElementsByTagName("name")[0].childNodes[0]
+              .nodeValue +
+            "</td><td>" +
+            students[i].getAttribute("id") +
+            "</td><td>" +
+            students[i].getElementsByTagName("branch")[0].childNodes[0]
+              .nodeValue +
+            "</td><td>" +
+            students[i].getElementsByTagName("cgpa")[0].childNodes[0]
+              .nodeValue +
+            "</td></tr>";
+        }
+        document.getElementById("studentTable").innerHTML = tableRows;
+      }
+    </script>
+  </head>
+  <body onload="loadXMLDoc()">
+    <h1>Student Information</h1>
+    <table id="studentTable"></table>
+  </body>
+</html>

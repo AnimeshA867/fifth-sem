@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        text-decoration: dashed;
+        font-weight: 600;
+        list-style-type: circle;
+      }
+      @media (max-width: 400px) {
+      }
+    </style>
+    <!-- 
+    The type of selector in css are:
+    1) Class selector
+    2) ID selector
+    3) Element SElector
+    4) Global Selector
+    5) CSS Grouping Selector
+
+    CSS colors:
+    1) Built-in colors
+    2) Hexadecimal Value
+    3) RGB
+    4) RGBA
+    4) HSL
+    
+    Popup: Alert, Confirm, Prompt
+    alert("You're about to do this")
+    confirm("Are you sure about this?")
+    prompt("Enter anumber:");
+
+    Array functions:
+    1) toString()
+    2) pop()
+    3) shift()
+    4) unshift()
+    5) join()
+    6) push()
+
+    -->
+  </head>
+  <body>
+    <canvas id="mycanvas" height="300" width="300"></canvas>
+    <script>
+      var c = document.getElementById("mycanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(300, 0);
+      ctx.stroke();
+      ctx.moveTo(300, 0);
+      ctx.lineTo(300, 300);
+      ctx.stroke();
+      ctx.lineTo(0, 300);
+      ctx.stroke();
+
+      ctx.arc(50, 50, 40, 30, 40);
+      ctx.stroke();
+    </script>
+  </body>
+</html>

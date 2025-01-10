@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog Boxes and Multiplication</title>
+  </head>
+  <body>
+    <button onclick="showDialogs()">Show Dialogs</button>
+    <button onclick="multiplyNumbers()">Multiply Numbers</button>
+
+    <script>
+      function showDialogs() {
+        alert("This is an alert dialog!");
+        const confirmResult = confirm("Do you want to continue?");
+        if (confirmResult) {
+          const userInput = prompt("Please enter something:");
+          alert("You entered: " + userInput);
+        } else {
+          alert("You chose to cancel.");
+        }
+      }
+
+      function multiplyNumbers() {
+        const num1 = parseFloat(prompt("Enter the first number:"));
+        const num2 = parseFloat(prompt("Enter the second number:"));
+        const result = num1 * num2;
+        alert("The result of multiplication is: " + result);
+      }
+    </script>
+  </body>
+</html>

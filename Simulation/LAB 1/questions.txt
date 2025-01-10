@@ -1,0 +1,3 @@
+1) Generate 10 random numbers using excel
+2) Use Linear or mixed congruent method to generate random number using c program
+3) Perform chi-square test in C programs

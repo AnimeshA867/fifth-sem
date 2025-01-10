@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li class="center">1</li>
+        <li class="center">2</li>
+        <li class="center">3</li>
+        <li class="center">4</li>
+        <li class="center">5</li>
+      </ul>
+
+      <img alt="Hover to see the image." onmouseenter="hoverMe()" />
+    </div>
+    <script>
+      let list = document.getElementsByTagName("li");
+
+      for (let i = 0; i < list.length; i++) {
+        if (i % 2 == 0) {
+          list[i].style.color = "red";
+        } else {
+          list[i].style.color = "blue";
+        }
+      }
+
+      let newDiv = document.createElement("div");
+      newDiv.innerHTML = "<div>Hey jude</div>";
+      document.body.appendChild(newDiv); // Appending the new div to the body
+
+      let center = document.getElementsByClassName("center");
+      console.log(Array.from(center));
+      Array.from(center).forEach((element) => {
+        console.log(element);
+        element.style.textAlign = "center";
+      });
+
+      let image = document.getElementsByTagName("img")[0];
+      console.log(image);
+
+      function hoverMe() {
+        image.setAttribute("src", "/Pictures/1.jpg");
+      }
+    </script>
+  </body>
+</html>

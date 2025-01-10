@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events Example</title>
+  </head>
+  <body>
+    <h1>HTML Events Example</h1>
+
+    <!-- Form Element Events -->
+    <h2>Form Element Events</h2>
+    <form>
+      <label for="name">Name: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        onchange="document.getElementById('nameFeedback').innerText=document.getElementById('name').value"
+      />
+      <p>Written in form: <span id="nameFeedback"></span></p>
+    </form>
+
+    <!-- Keyboard Events -->
+    <h2>Keyboard Events</h2>
+    <input
+      type="text"
+      id="keyboardInput"
+      onkeydown="document.getElementById('keydownFeedback').innerText='Key down: ' + event.key"
+    />
+    <p id="keydownFeedback"></p>
+
+    <!-- Mouse Events -->
+    <h2>Mouse Events</h2>
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+  </body>
+</html>

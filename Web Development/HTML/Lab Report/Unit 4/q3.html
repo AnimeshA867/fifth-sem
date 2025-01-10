@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Built-in Objects in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Window object
+      console.log("Window height: " + window.innerHeight);
+
+      // String object
+      const str = "Hello, World!";
+      console.log("String length: " + str.length);
+
+      // Number object
+      const num = 42;
+      console.log("Number: " + num.toFixed(2));
+
+      // Boolean object
+      const bool = true;
+      console.log("Boolean value: " + bool.toString());
+
+      // Date object
+      const date = new Date();
+      console.log("Current date: " + date.toDateString());
+
+      // Math object
+
+      // RegExp object
+      const regex = /hello/i;
+      console.log("Regex test: " + regex.test("Hello, World!"));
+
+      console.log("Random number: " + Math.random());
+      // Form object (assuming there's a form with id="myForm" in the HTML)
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("myForm");
+        if (form) {
+          form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            console.log("Form submitted");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

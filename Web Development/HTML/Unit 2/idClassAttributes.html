@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Class Attribute</title>
+    <style>
+      * {
+        box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        color: blue;
+      }
+      .pid {
+        color: red;
+      }
+      .pclass {
+        color: bisque;
+      }
+      #pid {
+        color: violet;
+      }
+      #pclass {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Khali</p>
+    <p class="pid"></p>
+    <p class="pclass"></p>
+    <p id="pid"></p>
+    <p id="pclass"></p>
+    <!-- <video
+      height="1920px"
+      width="1080px"
+      controls
+      autoplay
+      loops
+      poster="Pictures/1.jpg"
+      muted
+    >
+      <source
+        src="Pictures/zenitsu-agatsuma-with-sword-kimetsu-no-yaiba.3840x2160.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <audio controls>
+      <source src="Pictures/You _ I (Official Video).mp3" type="audio/mp3" />
+    </audio> -->
+    <canvas id="myCanvas" width="200" height="100"> </canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 0);
+      ctx.stroke();
+      ctx.moveTo(200, 200);
+      ctx.lineTo(200, 200);
+      ctx.stroke();
+      ctx.moveTo(200, 200);
+      ctx.lineTo(200, 0);
+      ctx.stroke();
+      ctx.moveTo(0, 200);
+      ctx.lineTo(0, 0);
+      ctx.stroke();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Padding vs Margin</title>
+
+    <!-- Internal CSS -->
+    <style>
+      .container {
+        border: 2px solid black;
+        padding: 20px; /* Space inside the border */
+        margin: 20px; /* Space outside the border */
+        background-color: lightgray;
+      }
+      .inner-box {
+        border: 2px solid blue;
+        padding: 20px;
+        margin: 20px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Padding vs Margin Example</h1>
+
+    <div class="container">
+      <p>This is a container with padding and margin.</p>
+      <div class="inner-box">
+        <p>
+          This is an inner box with padding and margin inside the container.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

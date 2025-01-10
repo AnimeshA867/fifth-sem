@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="element">This is an element with ID</div>
+    <div class="class-element">This is an element with class</div>
+    <p>This is a paragraph</p>
+    <button onclick="showElement()">Show Elements</button>
+    <button onclick="hideElement()">Hide Elements</button>
+
+    <script>
+      function showElement() {
+        $("#element").show();
+        $(".class-element").show();
+        $("p").show();
+      }
+
+      function hideElement() {
+        $("#element").hide();
+        $(".class-element").hide();
+        $("p").hide();
+      }
+    </script>
+  </body>
+</html>

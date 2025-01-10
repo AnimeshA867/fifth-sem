@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE mail [
+    <!ELEMENT mail (to,from,subject,message)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT message (#PCDATA)>
+]>
+
+<mail>
+    <to>Animesh</to>
+    <from>Receiver</from>
+    <subject>Subject</subject>
+    <message>Message</message>
+</mail>

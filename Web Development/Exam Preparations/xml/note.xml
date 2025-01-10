@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<note id="01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="notes.xsd">
+    <to>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos quia praesentium illum? Temporibus, repellendus officia voluptate amet fugit ad vitae recusandae corporis commodi atque perferendis blanditiis neque quibusdam adipisci.</to>
+    <from>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo consectetur ex pariatur aspernatur voluptatum labore, possimus adipisci reprehenderit aut corporis, repellat, a quis sit repellendus animi architecto iusto perspiciatis!</from>
+    <subject>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim distinctio asperiores hic quis aliquam blanditiis inventore qui, facere alias, natus excepturi praesentium at ullam optio quasi, delectus tempora ipsa eligendi.</subject>
+    <message>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum non voluptates odit enim cumque, repellendus dolore quis a! Dolorum accusantium laboriosam ea reprehenderit dolores? Praesentium quidem vel tempora dolor.</message>
+</note>

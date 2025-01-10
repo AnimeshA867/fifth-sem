@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Form is used to collect user inputs. THe user inputs are most often sent to a server for processing. The HTML <form> element is used to create a HTML form to collect the user input. The <form> element is a container for different element. 
+        They are:
+        1) Label
+        2) Input
+        3) Button
+        4) Text Area
+        5) Select
+        6) Options
+
+-->
+    <form action="form.php" method="POST">
+      <input type="submit" value="Submit" />
+      <input type="checkbox" name="" id="" />
+      <input type="button" value="" />
+      <select name="" id="">
+        <option value=""></option>
+      </select>
+      <textarea name="text" id=" text" rows="20" cols="30"></textarea>
+
+      <!-- 
+      The attributes of the form elements are:
+      1) Actions
+        <form action='form.php'></form>
+      2) Method->POST
+      3) Target-> _blank,_self, _parent,_top 
+      4) Novalidate: Boolean attributees. When present, it specifies that the form-data should not be validated when submitted.
+      5) autocomplete :
+      autocomplete="on"
+
+      Form input attributes:
+      1) Value
+      2) Read only
+      3) Disabled
+      4) Min max
+      5) size
+      6) Placeholder
+      7) Required
+
+
+      Meta Tag:
+      <meta>Inside the head.
+      <meta name="keyword" content="HTML,CSS">
+      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+       -->
+
+      <audio controls>
+        <source src="..." type="audio/mpeg" />
+      </audio>
+      <video controls height="400" width="300">
+        <source src="..." type="video/mp4" />
+      </video>
+    </form>
+    <canvas id="mycanvas" height="400" width="400"></canvas>
+    <script>
+      var c = document.getElementById("mycanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(300, 300);
+      ctx.stoke();
+    </script>
+  </body>
+</html>

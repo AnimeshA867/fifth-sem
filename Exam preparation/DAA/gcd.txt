@@ -1,0 +1,6 @@
+The algorithm for gcd is:
+
+1) Start
+2) Read two inputs a and b
+3) If a==0 then return b as answer and stop
+4) Else, perform gcd(b%a, a) 

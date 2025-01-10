@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  <div id="demo"></div>
+    <script>
+      let arr = ["csit", "it", "bca", "bim"];
+      let demo = document.getElementById("demo");
+      for (let i of arr) {
+        demo.innerHTML += i;
+      }
+    </script> -->
+
+    <!-- Write HTML script for creating a from containing textbox for username, password field for password, and checkbox for educaiton fields. Write a javascript function for validation of the form for all of the fields as required. In addition, lenght of the username should at least 4, the password should start with digital and end with $ -->
+
+    <form onsubmit="return validate(event)">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter your username:"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password:"
+      />
+      <input type="checkbox" name="education1" id="bca" value="bca" />
+      <input type="checkbox" name="education2" id="csit" value="csit" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function checkName(name) {
+        const condition = /^[A-Za-z0-9]{4,}$/;
+        if (!condition.test(name)) {
+          alert("invalid name");
+          return false;
+        }
+        return true;
+      }
+      /*************  ✨ Codeium Command ⭐  *************/
+      /**
+       * This function checks if a password is valid.
+       * A password is valid if it starts with a digit and ends with a dollar sign.
+       * @param {string} password The password to be validated.
+       */
+      /******  135e1960-7499-4025-9207-72dd84a8b7df  *******/
+      function checkPassword(password) {
+        const condition = /^[0-9].*\$$/;
+        if (!condition.test(password)) {
+          alert("Invalid password");
+          return false;
+        }
+        return true;
+      }
+
+      function checkCheckboxes(id1, id2) {
+        let element1 = document.getElementById(id1).checked;
+        let element2 = document.getElementById(id2).checked;
+
+        if (!element1 && !element2) {
+          alert("Alert check one box.");
+          return false;
+        }
+        return false;
+      }
+
+      function validate(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("username").value;
+
+        e1 = checkName(name);
+
+        const password = document.getElementById("password").value;
+        e2 = checkPassword(password);
+
+        e3 = checkCheckboxes("bca", "csit");
+
+        if (e1 && e2 && e3) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

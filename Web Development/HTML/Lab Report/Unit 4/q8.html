@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="clickBtn">Click Animesh</button>
+    <button id="dblClickBtn">Double Click Animesh</button>
+    <input type="text" id="hoverInput" placeholder="Hover over me" />
+    <input type="text" id="focusInput" placeholder="Focus on me" />
+    <form id="submitForm">
+      <button type="submit">Submit Animesh</button>
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        $("#clickBtn").click(function () {
+          alert("Button clicked!");
+        });
+
+        $("#dblClickBtn").dblclick(function () {
+          alert("Button double-clicked!");
+        });
+
+        $("#hoverInput").hover(function () {
+          alert("Input hovered!");
+        });
+
+        $("#focusInput").focus(function () {
+          alert("Input focused!");
+        });
+
+        $("#submitForm").submit(function (event) {
+          event.preventDefault();
+          alert("Form submitted!");
+        });
+      });
+    </script>
+  </body>
+</html>

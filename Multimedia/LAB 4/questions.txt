@@ -1,0 +1,12 @@
+Using Python:
+1. Plot the histogram of lenna.jpg. You can use matplotlib library.
+2. Generate random NumPy array of size (400,400) in range [0,256) and save it as
+image.
+3. Consider a sine wave with frequency 3hz, amplitude 1 and phase 0. Generate 10
+different samples from the sine wave at interval of 0.3 starting from 0sec. Plot the
+samples against time using python matplotlib.
+4. Consider a sine wave with frequency 3hz, amplitude 1 and phase 0. Generate
+samples with sampling rate 2hz starting from 0sec to 10sec and plot the samples
+5. Consider a sine wave with frequency 3hz, amplitude 1 and phase 0. Plot the sine
+wave starting from 0sec to 10sec. Consider Nyquist theorem for sampling.
+

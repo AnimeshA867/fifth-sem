@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Background Image</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("default.png");
+        background-size: cover;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="changeBackground()">Change Background</button>
+
+    <script>
+      function changeBackground() {
+        document.body.style.backgroundImage = "url('new-image.jpg')";
+      }
+    </script>
+  </body>
+</html>

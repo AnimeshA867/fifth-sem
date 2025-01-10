@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE mail SYSTEM "75_externalDTD.dtd">
+<mail>
+    <to>Receiver</to>
+    <from>Sender</from>
+    <subject>Subject</subject>
+    <message>Message</message>
+</mail>

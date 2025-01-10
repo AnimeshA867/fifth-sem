@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Tags</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+      * {
+        font-family: "SF Pro Display", sans-serif;
+      }
+      span {
+        background: linear-gradient(45deg, blue, red);
+        background-clip: text;
+        color: transparent;
+        font-size: 30px;
+      }
+      .world {
+        background: linear-gradient(45deg, green, blue);
+        background-clip: text;
+      }
+      a {
+        text-decoration-line: none;
+      }
+      p {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span>This is a inline tag.</span>
+    <span>This is a second inline tag.</span> -->
+
+    <title>Tags Inline</title>
+    <h2><span>Facebook</span> notifications primitive approach</h2>
+    <p>Notifications<span> 10 </span></p>
+    <hr />
+    <a href="https://netflix.com/helloworld" title="Hello world" target="_blank"
+      ><span class="world">Hello world</span>
+    </a>
+  </body>
+</html>
